@@ -1,1 +1,1 @@
-# openyu-jquery
+# OpenYu jQuery

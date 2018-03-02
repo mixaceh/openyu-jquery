@@ -1,0 +1,125 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button#slideDown").click(function () {
+                $("#div1").slideDown();
+                $("#div2").slideDown("slow");
+                $("#div3").slideDown(1000);
+            });
+
+            $("button#slideUp").click(function () {
+                $("#div4").slideUp();
+                $("#div5").slideUp("slow");
+                $("#div6").slideUp(1000);
+            });
+
+            $("button#slideToggle").click(function () {
+                $("#div7").slideToggle();
+                $("#div8").slideToggle("slow");
+                $("#div9").slideToggle(1000);
+            });
+
+        });
+    </script>
+
+    <style>
+        .red {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .green {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .blue {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<table border="0">
+    <tr>
+        <td style="vertical-align:top;width:100px;height:300px;">
+            <button id="slideDown" type="button">SlideDown</button>
+            <p/>
+
+            <div id="div1" class="red" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div2" class="green" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div3" class="blue" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+        </td>
+        <td style="vertical-align:top;width:100px;height:300px;">
+            <button id="slideUp" type="button">SlideUp</button>
+            <p/>
+
+            <div id="div4" class="red">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div5" class="green">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div6" class="blue">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+        </td>
+        <td style="vertical-align:top;width:100px;height:300px;">
+            <button id="slideToggle" type="button">SlideToggle</button>
+            <p/>
+
+            <div id="div7" class="red" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div8" class="green" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+            <div id="div9" class="blue" style="display: none">
+                <p>This is a paragraph.</p>
+            </div>
+            <p/>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
